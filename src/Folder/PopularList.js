@@ -3,7 +3,7 @@ import { Text, FlatList, SectionList, StyleSheet } from "react-native";
 import Popular from "./Popular";
 import sections from "../popular.json";
 
-const PopularList = ({ list, navigation }) => {
+const PopularList = ({navigation }) => {
   const renderSectionHeader = ({ section }) => (
     <>
       <Text style={styles.sectionHeader}>{section.title}</Text>

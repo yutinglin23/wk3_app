@@ -44,7 +44,6 @@ const styles = StyleSheet.create({
   },
   cardSectionStyle: {
     backgroundColor: "#fff",
-
   },
   imageStyle: {
     height: 200,

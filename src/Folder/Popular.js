@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
     width: 130,
   },
   headerTitleStyle: {
-
     fontSize: 16,
     fontWeight: "600",
     width:180,
@@ -47,13 +46,11 @@ const styles = StyleSheet.create({
   },
   cardSectionStyle: {
     marginBottom:16,
-    
   },
   imageStyle: {
     height: 200,
     width: 140,
     marginRight:16,
-
   },
 
 });

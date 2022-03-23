@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import { View, underlayColor, TouchableOpacity ,TouchableHighlight} from "react-native";
+import {TouchableOpacity ,TouchableHighlight} from "react-native";
 import BookScreen from "../Screen/BookScreen";
 import Detail from "../Screen/detail";
 import albumData from "../popular.json";
@@ -87,19 +87,13 @@ const StackNavigator = ({ navigation: { goBack } }) => {
             color:"white",
           },
           headerRight: () => (
-            <TouchableHighlight underlayColor="yellow">
-              <MaterialCommunityIcons
-                name="magnify"
-                color={"black"}
+            <MaterialCommunityIcons name="magnify" color={"black"}
                 onPress={() => alert("Search!!!")}
                 size={30}
               />
-            </TouchableHighlight>
           ),
           headerLeft: () => (
-            <TouchableHighlight underlayColor="yellow">
               <MaterialCommunityIcons name="menu" color={"black"} size={30} />
-            </TouchableHighlight>
           ),
           
         }}
